@@ -49,8 +49,8 @@ export default class DragM extends React.Component {
     document.removeEventListener("mousemove", this.docMove);
   }
   render() {
-    const { children, style } = this.props;
-    const newStyle = { ...style, cursor: "move", userSelect: "none" };
+    const { children } = this.props;
+    const newStyle = { ...children.props.style, cursor: "move", userSelect: "none" };
     return React.cloneElement(React.Children.only(children), {
       ref: tdom => {
         return (this.tdom = tdom);

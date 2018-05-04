@@ -84,11 +84,9 @@ var DragM = function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      var _props = this.props,
-          children = _props.children,
-          style = _props.style;
+      var children = this.props.children;
 
-      var newStyle = _extends({}, style, { cursor: "move", userSelect: "none" });
+      var newStyle = _extends({}, children.props.style, { cursor: "move", userSelect: "none" });
       return _react2.default.cloneElement(_react2.default.Children.only(children), {
         ref: function ref(tdom) {
           return _this2.tdom = tdom;
