@@ -1,0 +1,44 @@
+{
+  "name": "dragm",
+  "version": "0.0.1",
+  "description": "React simple drag",
+  "keywords": [
+    "react 拖拽",
+    "react drag",
+    "react"
+  ],
+  "files": [
+    "src",
+    "lib"
+  ],
+  "homepage": "https://github.com/xiabingwu/dragm",
+  "author": "1052537969@qq.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiabingwu/dragm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xiabingwu/dragm/issues"
+  },
+  "main": "./lib/index",
+  "scripts": {
+    "clean": "rimraf ./lib && mkdir lib",
+    "lib": "npm run clean && babel src --out-dir lib && ncp lib ./examples/src/dragm"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.8",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "viewerjs": "^1.0.0-rc.1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "ncp": "^2.0.0",
+    "rimraf": "^2.6.2"
+  }
+}
