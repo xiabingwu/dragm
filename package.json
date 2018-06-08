@@ -1,6 +1,6 @@
 {
   "name": "dragm",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "React simple drag",
   "keywords": [
     "react 拖拽",
@@ -27,9 +27,8 @@
   },
   "dependencies": {
     "prop-types": "^15.5.8",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "viewerjs": "^1.0.0-rc.1"
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
   },
   "license": "MIT",
   "devDependencies": {
