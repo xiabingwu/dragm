@@ -1,6 +1,6 @@
 {
   "name": "dragm",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "React simple drag",
   "keywords": [
     "react 拖拽",
@@ -25,10 +25,12 @@
     "clean": "rimraf ./lib && mkdir lib",
     "lib": "npm run clean && babel src --out-dir lib && ncp lib ./examples/src/dragm"
   },
-  "dependencies": {
-    "prop-types": "^15.5.8",
+  "peerDependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.8"
   },
   "license": "MIT",
   "devDependencies": {
