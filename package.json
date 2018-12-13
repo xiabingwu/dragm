@@ -26,8 +26,8 @@
     "lib": "npm run clean && babel src --out-dir lib && ncp lib ./examples/src/dragm"
   },
   "peerDependencies": {
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
   },
   "dependencies": {
     "prop-types": "^15.5.8"
